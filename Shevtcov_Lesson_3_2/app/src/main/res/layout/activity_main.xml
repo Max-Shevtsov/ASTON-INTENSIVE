@@ -6,13 +6,177 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgaston" />
 
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/tv_it_solutions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:srcCompat="@drawable/icon" />
+
+
+    <TextView
+        android:id="@+id/tv_it_solutions"
+        android:layout_width="@dimen/width_for_constraint"
+        android:layout_height="wrap_content"
+        android:text="ИТ-решения для развития бизнеса"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_dev"
+        android:layout_width="@dimen/width_for_constraint"
+        android:layout_height="wrap_content"
+        android:text="Разработка программного обеспечения"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_it_solutions"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/tv_it_solutions" />
+
+    <TextView
+        android:id="@+id/about_us"
+        android:layout_width="@dimen/width_for_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:text="О нас:"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
+    <TextView
+        android:id="@+id/about_us_text"
+        android:layout_width="@dimen/width_for_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:text="Aston — компания по разработке ПО с полным циклом услуг. Уже 15 лет мы помогаем заказчикам по всему миру трансформировать бизнес, создавая эффективные мобильные и десктопные решения."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_us" />
+
+    <TextView
+        android:id="@+id/offices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Офисы"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_us_text" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="chip_group,vacations,contacts,gallery" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:layout_marginEnd="@dimen/margin_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offices">
+
+        <com.google.android.material.chip.Chip
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Москва"
+            app:chipBackgroundColor="@color/gray"
+            app:chipCornerRadius="@dimen/chipCornerRadius" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Казань"
+            app:chipBackgroundColor="@color/gray"
+            app:chipCornerRadius="@dimen/chipCornerRadius" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ростов-на-Дону"
+            app:chipBackgroundColor="@color/gray"
+            app:chipCornerRadius="@dimen/chipCornerRadius" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Минск"
+            app:chipBackgroundColor="@color/gray"
+            app:chipCornerRadius="@dimen/chipCornerRadius" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Гомель"
+            app:chipBackgroundColor="@color/gray"
+            app:chipCornerRadius="@dimen/chipCornerRadius" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:text="КОНТАКТЫ"
+        app:layout_constraintEnd_toStartOf="@id/vacations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip_group" />
+
+    <Button
+        android:id="@+id/vacations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ВАКАНСИИ"
+        app:layout_constraintEnd_toStartOf="@id/gallery"
+        app:layout_constraintStart_toEndOf="@id/contacts"
+        app:layout_constraintTop_toBottomOf="@id/chip_group" />
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:text="ГАЛЕРЕЯ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vacations"
+        app:layout_constraintTop_toBottomOf="@id/chip_group" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="invisible"
+        android:layout_width="@dimen/width_for_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

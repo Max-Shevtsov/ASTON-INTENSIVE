@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.aston_intensive'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.aston_intensive"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
