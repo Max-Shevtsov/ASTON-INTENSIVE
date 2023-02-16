@@ -2,4 +2,6 @@
 <resources>
     <dimen name="flag_size">100dp</dimen>
     <dimen name="for_using_weight">0dp</dimen>
+    <dimen name="into_columns">20dp</dimen>
+    <dimen name="into_rows">100dp</dimen>
 </resources>
