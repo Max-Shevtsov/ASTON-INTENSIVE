@@ -1,18 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        app:srcCompat="@drawable/columb" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="top|center"
+        app:srcCompat="@drawable/denmark" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="top|end"
+        app:srcCompat="@drawable/italy" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="center|start"
+        app:srcCompat="@drawable/madagaskar" />
+
+    <ImageView
+        android:id="@+id/on_Linear_activity"
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ost" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="center|end"
+        app:srcCompat="@drawable/poland" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="bottom|start"
+        app:srcCompat="@drawable/sw" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="bottom|center"
+        app:srcCompat="@drawable/tai" />
+
+    <ImageView
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/uk" />
+</FrameLayout>
