@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_start">8dp</dimen>
+    <dimen name="margin_end">8dp</dimen>
+    <dimen name="width_for_constraint">0dp</dimen>
+    <dimen name="chipCornerRadius">12dp</dimen>
+</resources>
