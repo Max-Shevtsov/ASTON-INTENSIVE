@@ -78,7 +78,6 @@ constructor(
 
     }
 
-
     private fun drawCircle(canvas: Canvas?) {
         setPaintAttrs(Color.BLACK, Style.STROKE, 20f)
         canvas?.drawCircle(clockCentreX, clockCentreY, clockRadius, paint)
@@ -91,8 +90,8 @@ constructor(
         second = calendar.get(Calendar.SECOND)
         hour = if (hour > 12) hour - 12 else hour
         drawHourHand(canvas, (hour + minute / 60.0) * 5.0)
-        drawMinuteHand(canvas, minute*1f)
-        drawSecondHand(canvas, second*1f)
+        drawMinuteHand(canvas, minute * 1f)
+        drawSecondHand(canvas, second * 1f)
     }
 
     private fun drawHourHand(canvas: Canvas?, time: Double) {
@@ -104,6 +103,7 @@ constructor(
             (clockCentreY * sin(angle) * hourHandSize).toFloat(), paint
         )
     }
+
     private fun drawMinuteHand(canvas: Canvas?, time: Float) {
         setPaintAttrs(Color.BLUE, Style.STROKE, 10f)
         angle = PI * time / 30 - PI / 2
@@ -113,6 +113,7 @@ constructor(
             (clockCentreY * sin(angle) * handSize).toFloat(), paint
         )
     }
+
     private fun drawSecondHand(canvas: Canvas?, time: Float) {
         setPaintAttrs(Color.BLACK, Style.STROKE, 10f)
         angle = PI * time / 30 - PI / 2
@@ -122,9 +123,6 @@ constructor(
             (clockCentreY * sin(angle) * handSize).toFloat(), paint
         )
     }
-
-
-
 }
 
 
