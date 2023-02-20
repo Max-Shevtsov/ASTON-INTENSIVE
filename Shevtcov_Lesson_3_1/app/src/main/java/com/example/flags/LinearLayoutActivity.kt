@@ -5,14 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-class MainActivity : AppCompatActivity() {
+class LinearLayoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val imageButton = findViewById<ImageView>(R.id.on_Linear_activity)
+        setContentView(R.layout.activity_linear_layout)
+        val imageButton = findViewById<ImageView>(R.id.on_grid_activity)
         imageButton.setOnClickListener() {
-            val switchIntent = Intent(this, LinearLayoutActivity::class.java)
+            val switchIntent = Intent(this, GridLayoutActivity::class.java)
             startActivity(switchIntent)
         }
+
     }
 }

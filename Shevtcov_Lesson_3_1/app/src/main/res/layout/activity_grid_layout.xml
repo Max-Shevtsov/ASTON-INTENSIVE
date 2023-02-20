@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3"
 
+    tools:context=".GridLayoutActivity">
 
     <ImageView
+
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
+        android:layout_marginBottom="@dimen/into_rows"
+
         app:srcCompat="@drawable/columb" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="top|center"
+        android:layout_marginBottom="@dimen/into_rows"
+        android:layout_marginStart="@dimen/into_columns"
         app:srcCompat="@drawable/denmark" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="top|end"
+        android:layout_marginBottom="@dimen/into_rows"
+        android:layout_marginStart="@dimen/into_columns"
         app:srcCompat="@drawable/italy" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="center|start"
+        android:layout_marginBottom="@dimen/into_rows"
         app:srcCompat="@drawable/madagaskar" />
 
     <ImageView
-        android:id="@+id/on_Linear_activity"
+        android:id="@+id/on_main_activity"
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/into_rows"
+        android:layout_marginStart="@dimen/into_columns"
         app:srcCompat="@drawable/ost" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="center|end"
+        android:layout_marginBottom="@dimen/into_rows"
+        android:layout_marginStart="@dimen/into_columns"
         app:srcCompat="@drawable/poland" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="bottom|start"
         app:srcCompat="@drawable/sw" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="bottom|center"
+        android:layout_marginStart="@dimen/into_columns"
         app:srcCompat="@drawable/tai" />
 
     <ImageView
         android:layout_width="@dimen/flag_size"
         android:layout_height="@dimen/flag_size"
-        android:layout_gravity="bottom|end"
+        android:layout_marginStart="@dimen/into_columns"
         app:srcCompat="@drawable/uk" />
-</FrameLayout>
+</GridLayout>

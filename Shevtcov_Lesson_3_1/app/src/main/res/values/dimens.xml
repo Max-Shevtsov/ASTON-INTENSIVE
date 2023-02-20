@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flag_size">100dp</dimen>
+    <dimen name="for_using_weight">0dp</dimen>
+    <dimen name="into_columns">20dp</dimen>
+    <dimen name="into_rows">100dp</dimen>
+=======
+>>>>>>> origin/feature_lesson_3_1
+</resources>
